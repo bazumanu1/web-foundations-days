@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About QuickNotes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>QuickNotes</h1>
+    <p>Small notes, ready when you need them.</p>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>About QuickNotes</h2>
+    <p>QuickNotes gives you a simple place to capture ideas, reminders, and details as they come to mind. Keep useful information close at hand so you can get back to what you were doing.</p>
+
+    <section aria-labelledby="how-to-heading">
+      <h3 id="how-to-heading">How to use QuickNotes</h3>
+      <ol>
+        <li>Open the Home page and enter a short title for your note.</li>
+        <li>Write the details you want to remember in the note field.</li>
+        <li>Select Add note to save your note for later.</li>
+      </ol>
+    </section>
+
+    <section aria-labelledby="features-heading">
+      <h3 id="features-heading">Features</h3>
+      <ul class="features">
+        <li>Quick entry for titles and note text</li>
+        <li>A clean, focused space for everyday reminders</li>
+        <li>Keyboard shortcuts for common actions</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="shortcuts-heading">
+      <h3 id="shortcuts-heading">Keyboard shortcuts</h3>
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Shortcut</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Ctrl + Enter</td>
+            <td>Save the current note</td>
+          </tr>
+          <tr>
+            <td>Ctrl + /</td>
+            <td>Focus the note search field</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section aria-labelledby="feedback-heading">
+      <h3 id="feedback-heading">Send feedback</h3>
+      <form action="#" method="get">
+        <p>
+          <label for="feedback-name">Name</label>
+          <input id="feedback-name" name="name" type="text" required>
+        </p>
+        <p>
+          <label for="feedback-email">Email</label>
+          <input id="feedback-email" name="email" type="email" required>
+        </p>
+        <p>
+          <label for="feedback-message">Message</label>
+          <textarea id="feedback-message" name="message" rows="5" required></textarea>
+        </p>
+        <button type="submit">Send feedback</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 QuickNotes</p>
+  </footer>
+</body>
+</html>

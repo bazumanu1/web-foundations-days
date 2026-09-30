@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuickNotes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>QuickNotes</h1>
+    <p>Small notes, ready when you need them.</p>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section aria-labelledby="notes-heading">
+      <h2 id="notes-heading">Your notes</h2>
+      <form>
+        <p>
+          <label for="note-title">Title</label>
+          <input id="note-title" name="title" type="text">
+        </p>
+        <p>
+          <label for="note-content">Note</label>
+          <textarea id="note-content" name="content" rows="6"></textarea>
+        </p>
+        <button type="submit">Add note</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 QuickNotes</p>
+  </footer>
+</body>
+</html>
