@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Directory | Day 5</title>
+  <script src="users.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>User Directory</h1>
+    <p>Load a directory from the server and filter it on this page.</p>
+  </header>
+
+  <main>
+    <section aria-labelledby="directory-heading">
+      <h2 id="directory-heading">Directory</h2>
+      <button id="load-users" type="button">Load users</button>
+      <p id="status" aria-live="polite">Load users to view the directory.</p>
+
+      <label for="filter-input">Filter by name</label>
+      <input id="filter-input" type="search" autocomplete="off" placeholder="Search names">
+
+      <ul id="users-list" aria-label="Users"></ul>
+    </section>
+  </main>
+</body>
+</html>
