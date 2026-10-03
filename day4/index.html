@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuickNotes | Day 4</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <p class="eyebrow">QUICKNOTES / DAY 04</p>
+    <h1>Thoughts in progress</h1>
+    <p class="intro">A quiet space for the idea you don't want to lose.</p>
+  </header>
+
+  <main>
+    <section aria-labelledby="editor-title">
+      <div class="section-heading">
+        <h2 id="editor-title">New draft</h2>
+        <button id="theme-toggle" class="theme-button" type="button">Dark mode</button>
+      </div>
+
+      <label for="note-text">Your note</label>
+      <textarea id="note-text" rows="9" placeholder="Start writing..."></textarea>
+
+      <div class="measurements" aria-live="polite" aria-atomic="true">
+        <p id="char-count">0 / 200 characters</p>
+        <p id="word-count">0 words</p>
+      </div>
+
+      <div class="actions">
+        <p class="draft-status">Draft saved in this browser</p>
+        <button id="clear-btn" class="clear-button" type="button">Clear draft</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>QuickNotes <span aria-hidden="true">/</span> Day 4</footer>
+</body>
+</html>
