@@ -1,0 +1,7 @@
+# Day 8 Reflection
+
+The most difficult concept in the course was reasoning about consistency when requests happen at the same time. It is easy to draw a seat map that says “available,” but two people can see that same view and click at nearly the same instant. I worked through it by following both requests into the database, then using a transaction, row locks, and a unique active-seat constraint as the final authority. The cache can make browsing faster, but it cannot decide who owns a seat.
+
+For the capstone, I would improve the big-sale estimate by validating its assumptions with a load test. The supplied facts give a ten-minute average, but real arrivals will be uneven; I would measure the burst shape, time spent holding seats, payment latency, and how many retries occur. That would make the queue admission rate and database capacity less speculative. I would also review the fairness goal with users, since FIFO queue entry does not guarantee that the first browser click wins a specific seat.
+
+Next, I want to learn how to run realistic distributed load tests and observe a system under failure. In particular, I want more practice with PostgreSQL contention, payment webhook retries, and queue recovery, then use those measurements to tune the design rather than relying only on estimates.
